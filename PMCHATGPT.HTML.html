@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>使用狀態追蹤</title>
+    <style>
+        #status {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="start()">開始</button>
+    <button onclick="end()">結束</button>
+    <div id="status">空閒中</div>
+
+    <script>
+        function start() {
+            document.getElementById('status').textContent = '使用中';
+        }
+
+        function end() {
+            document.getElementById('status').textContent = '空閒中';
+        }
+    </script>
+</body>
+</html>
